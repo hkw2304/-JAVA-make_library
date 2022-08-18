@@ -10,7 +10,7 @@ public class NoticeMain {
 		Scanner sc = new Scanner(System.in);
 		NoticeService ns = new NoticeService();
 		while (true) {
-			System.out.println("____________________");
+			System.out.println("____________________1");
 			System.out.println("1.조회");
 			System.out.println("2.입력");
 			System.out.println("3.수정");
