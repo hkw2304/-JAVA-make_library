@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="350.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.MyPageController">
+   <children>
+      <Label layoutX="14.0" layoutY="21.0" prefHeight="36.0" prefWidth="118.0" text="내 정보">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Button layoutY="88.0" mnemonicParsing="false" onAction="#mypage1" prefHeight="54.0" prefWidth="112.0" text="정보확인">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button layoutY="192.0" mnemonicParsing="false" onAction="#mypage4" prefHeight="60.0" prefWidth="112.0" text="회원탈퇴">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button layoutY="249.0" mnemonicParsing="false" onAction="#logoutProc" prefHeight="60.0" prefWidth="112.0" text="이       전">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <TextField fx:id="modName" layoutX="259.0" layoutY="88.0" prefHeight="29.0" prefWidth="282.0" promptText="수정할 이름 입력" />
+      <PasswordField fx:id="modPw" layoutX="259.0" layoutY="128.0" prefHeight="29.0" prefWidth="282.0" promptText="수정할 비밀번호 입력" />
+      <PasswordField fx:id="modPwok" layoutX="259.0" layoutY="171.0" prefHeight="29.0" prefWidth="282.0" promptText="수정할 비밀번호 확인 입력" />
+      <TextField fx:id="modBirth" layoutX="259.0" layoutY="208.0" prefHeight="29.0" prefWidth="282.0" promptText="수정할 생년월일 입력" />
+      <TextField fx:id="modEmail" layoutX="259.0" layoutY="249.0" prefHeight="29.0" prefWidth="282.0" promptText="수정할 이메일 입력" />
+      <Label layoutX="155.0" layoutY="93.0" text="이 름">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="156.0" layoutY="215.0" text="생년월일">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="156.0" layoutY="255.0" text="이메일">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="156.0" layoutY="134.0" text="비밀번호">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="155.0" layoutY="177.0" prefHeight="18.0" prefWidth="91.0" text="비밀번호확인">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ToggleButton layoutY="142.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="112.0" selected="true" text="정보수정">
+         <font>
+            <Font size="14.0" />
+         </font></ToggleButton>
+      <Button layoutX="480.0" layoutY="309.0" mnemonicParsing="false" onAction="#modifyUser" prefHeight="29.0" prefWidth="67.0" text="수    정">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

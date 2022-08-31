@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.AdminController3">
+   <children>
+      <Label layoutX="37.0" layoutY="23.0" text="관리자 님 환영합니다." />
+      <Button onAction="#logoutProc" layoutX="499.0" layoutY="19.0" mnemonicParsing="false" text="로그아웃" />
+      <Button onAction="#admin1" layoutY="75.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="120.0" text="도서목록" />
+      <Button onAction="#admin2" layoutX="120.0" layoutY="75.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="120.0" text="도서등록" />
+      <ToggleButton layoutX="240.0" layoutY="75.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="120.0" selected="true" text="회원조회" />
+      <Button onAction="#admin4" layoutX="360.0" layoutY="75.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="120.0" text="연체관리" />
+      <Button onAction="#admin5" layoutX="480.0" layoutY="75.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="120.0" text="공지사항관리" />
+      <Button onAction="#showUserColumn" layoutX="543.0" layoutY="115.0" mnemonicParsing="false" text="조회" />
+      <TableView fx:id="userList" layoutX="37.0" layoutY="115.0" prefHeight="261.0" prefWidth="473.0">
+        <columns>
+          <TableColumn fx:id="name" prefWidth="93.33331298828125" text="이름" />
+          <TableColumn fx:id="id" prefWidth="84.66671752929688" text="아이디" />
+            <TableColumn fx:id="pw" prefWidth="76.00006103515625" text="비밀번호" />
+            <TableColumn fx:id="email" prefWidth="124.6666259765625" text="이메일" />
+            <TableColumn fx:id="birth" prefWidth="92.0" text="생년월일" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

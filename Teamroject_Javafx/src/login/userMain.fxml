@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.UserController">
+   <children>
+      <Label layoutX="62.0" layoutY="42.0" text="회원메인페이지" />
+      <Button layoutX="409.0" layoutY="38.0" mnemonicParsing="false" onAction="#myPageProc" text="마이페이지" />
+      <Button layoutX="506.0" layoutY="38.0" mnemonicParsing="false" onAction="#logoutProc" text="로그아웃" />
+      <TextField fx:id="search" layoutX="63.0" layoutY="96.0" promptText="도서이름 :" />
+      <Button onAction="#searchProc" layoutX="254.0" layoutY="96.0" mnemonicParsing="false" text="검색" />
+      <Button fx:id="rental" layoutX="318.0" layoutY="96.0" mnemonicParsing="false" text="대여" />
+      <TableView fx:id="searchBook" layoutX="62.0" layoutY="138.0" prefHeight="222.0" prefWidth="414.0">
+        <columns>
+          <TableColumn fx:id="title" prefWidth="54.0" text="책제목" />
+          <TableColumn fx:id="bno" prefWidth="60.666656494140625" text="도서번호" />
+            <TableColumn fx:id="author" prefWidth="36.6666259765625" text="작가" />
+            <TableColumn fx:id="publisher" prefWidth="48.6666259765625" text="출판사" />
+            <TableColumn fx:id="bcnt" prefWidth="44.0" text="재고" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

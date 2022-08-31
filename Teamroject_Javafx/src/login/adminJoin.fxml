@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+fx:controller="login.JoinAdminController">
+   <children>
+      <Label layoutX="270.0" layoutY="44.0" text="관리자등록" />
+      <Label layoutX="72.0" layoutY="96.0" text="이름" />
+      <Label layoutX="325.0" layoutY="96.0" text="아이디" />
+      <Label layoutX="72.0" layoutY="182.0" text="비밀번호" />
+      <Label layoutX="307.0" layoutY="182.0" text="비밀번호확인" />
+      <TextField fx:id="adminName" layoutX="134.0" layoutY="92.0" promptText="name :" />
+      <TextField fx:id="adminId" layoutX="400.0" layoutY="92.0" promptText="id :" />
+      <PasswordField fx:id="adminPw" layoutX="134.0" layoutY="178.0" promptText="pw :" />
+      <PasswordField fx:id="adminPwOk" layoutX="401.0" layoutY="178.0" promptText="pw?" />
+      <Button onAction="#joinProc" layoutX="400.0" layoutY="338.0" mnemonicParsing="false" text="등록" />
+      <Button onAction="#exitProc" layoutX="527.0" layoutY="338.0" mnemonicParsing="false" text="뒤로" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.AdminController">
+   <children>
+      <Label layoutX="37.0" layoutY="23.0" text="관리자 님 환영합니다." />
+      <Button layoutX="499.0" layoutY="19.0" mnemonicParsing="false" onAction="#logoutProc" text="로그아웃" />
+      <Button layoutX="120.0" layoutY="75.0" mnemonicParsing="false" onAction="#admin2" prefHeight="30.0" prefWidth="120.0" text="도서등록" />
+      <Button layoutX="240.0" layoutY="75.0" mnemonicParsing="false" onAction="#admin3" prefHeight="30.0" prefWidth="120.0" text="회원조회" />
+      <Button layoutX="360.0" layoutY="75.0" mnemonicParsing="false" onAction="#admin4" prefHeight="30.0" prefWidth="120.0" text="연체관리" />
+      <Button layoutX="480.0" layoutY="75.0" mnemonicParsing="false" onAction="#admin5" prefHeight="30.0" prefWidth="120.0" text="공지사항관리" />
+      <ToggleButton layoutY="75.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="120.0" selected="true" text="도서목록" />
+      <TableView fx:id="bookList" layoutX="20.0" layoutY="115.0" prefHeight="269.0" prefWidth="509.0">
+        <columns>
+          <TableColumn fx:id="title" prefWidth="240.0" text="책제목" />
+          <TableColumn fx:id="bno" prefWidth="54.0" text="도서번호" />
+            <TableColumn fx:id="author" prefWidth="78.0" text="작가" />
+            <TableColumn fx:id="publisher" minWidth="2.0" prefWidth="79.0" text="출판사" />
+            <TableColumn fx:id="bcnt" prefWidth="57.0" text="재고" />
+        </columns>
+      </TableView>
+      <Button layoutX="543.0" layoutY="115.0" mnemonicParsing="false" onAction="#showBookColumn" text="조회" />
+   </children>
+</AnchorPane>
